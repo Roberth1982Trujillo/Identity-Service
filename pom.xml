@@ -124,7 +124,6 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-		</dependencies>
 		<!-- Parche de seguridad para Jackson (CH-08) -->
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
