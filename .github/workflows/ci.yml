@@ -38,6 +38,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -DskipTests -Dsonar.organization=roberth1982trujillo -Dsonar.projectKey=roberth1982trujillo_Identity-Service
+    # --- CH-07: Construcción y escaneo (faltaba esto) ---
     - name: Construir imagen Docker localmente
       run: docker build -t identity-service:latest .
     - name: Escaneo de vulnerabilidades con Trivy
