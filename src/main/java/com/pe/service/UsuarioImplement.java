@@ -14,7 +14,6 @@ public class UsuarioImplement implements IUsuarioService{
     @Autowired
     PasswordEncoder passwordEncoder;
 
-
     @Override
     public String createUsuario(Usuario usuario) {
         String encryptedPassword = passwordEncoder.encode(usuario.getPassword());
